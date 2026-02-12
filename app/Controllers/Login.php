@@ -7,11 +7,13 @@
     class Login extends BaseController
     {
 
-        public function index() {
+        public function index() 
+        {
             return view("Login");
         }
 
-        public function auth() {
+        public function auth()
+        {
 
             $gmail = $this->request->getPost("gmail");
             $password = $this->request->getPost("password");
@@ -25,7 +27,7 @@
 
             $usersInstance->select($data);
 
-            return redirect()->to(site_url("dashboard/employee"))
+            return redirect()->to(site_url("employees/dashboard"))
                 ->with("success", ["message" => "login success"]);
 
             // return view("LoginResult",[

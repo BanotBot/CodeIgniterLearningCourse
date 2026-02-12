@@ -8,11 +8,13 @@
     class Register extends BaseController 
     {
 
-        public function index() {
+        public function index() 
+        {
             return view("register");
         }
 
-        public function userRegistration(){
+        public function userRegistration()
+        {
 
             $gmail = $this->request->getPost("gmail");
             $password = $this->request->getPost("password");

@@ -29,7 +29,7 @@ abstract class BaseController extends Controller
 
     /**
      * @return void
-     */
+    */
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Load here all helpers you want to be available in your controllers that extend BaseController.
